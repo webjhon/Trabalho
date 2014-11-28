@@ -1,0 +1,38 @@
+.botoes{
+    background-color: white;
+    border: 2px solid blue;
+    font-weight: bold;
+    font-size:20px;
+    height: 12%;
+    width:30%;
+}
+.bothover {
+    background-color:orange;
+}
+
+aside{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+h2{
+   color:blue;
+   float:left;
+   margin-left:2%;
+   margin-right: 3%;
+}
+
+div{
+    clear:left;
+}
+
+#CalculaValores{
+    display:none;
+}
+#SimulaValores{
+    display:none;
+}
+
+
+
