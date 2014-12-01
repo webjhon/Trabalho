@@ -15,10 +15,11 @@
         </header>
         <aside>
             <h1> Escolha uma opção abaixo: </h1>
-            <button  class="botoes" onclick="CorClick()"> Calculo de valores possíves</button>
-            <button  class="botoes" onclick="CorClick2()"> Simular</button><br>
-            <h2> Saiba quanto você pode financiar </h2>
-            <h2> Simule o preço da sua nova casa </h2><br>
+				<button  class="botoes" onclick="CorClick()"> Calculo de valores possíves</button>
+				<button  class="botoes" onclick="CorClick2()"> Simular</button><br>
+				<h2> Saiba quanto você pode financiar </h2>
+				<h2> Simule o preço da sua nova casa </h2><br>
+			
             <div id="CalculaValores">
                 <form>
 					<fieldset>
@@ -59,10 +60,16 @@
 						<input type="text" name="renda"/></p>
 					<p><label for="idade">Qual sua idade ?</label>
 						<input type="number" name="idade" min="18" max="100"/></p>
-						
+
+<!--==================================botões===========================================-->
+					<input type="reset" name="limpar" value="Limpar"/>
+					<input type="submit" name="calcular" value="Calcular"/>
+<!--================================fim botões=========================================-->			
 					</fieldset>
 				</form>
             </div>
+			
+			
             <div id="SimulaValores">
                 INSERIR FORMULÁRIOS DE SIMULAR VALORES.
             </div>
