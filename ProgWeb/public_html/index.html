@@ -75,7 +75,7 @@
 					<fieldset>
 						<legend>Simulação do valor do seu imóvel</legend>
 						
-						<p><label for="financiamento">Este financiamento é para:</label>
+                                                <p><label for="financiamento">Este financiamento é para:</label>
 							<input type="submit" name="PF" value="Pessoa Física">
 							<input type="submit" name="PJ" value="Pessoa Jurídica"></p>
 						<p><label for="tipo">Qual o tipo de financiamento ?</label>
@@ -91,11 +91,22 @@
 								<option value="imovelu">Imóvel Usado</option></p></select>
 						<p><label for="cidade">Cidade</label>
 							<input type="text" name="cidade"/></p>
+                                                <p><label for="Imovel">Possui Imóvel na cidade</label>
+                                                    <input type="radio" name="sex" value="Sim" checked> Sim
+                                                    <input type="radio" name="sex" value="Não" checked> Não
 						<p><label for="valor">Qual o valor aproximado do imóvel ?</label>
 							<input type="text" name="valor"/></p>
-						<p><label for="cnpj">CNPJ</label>
+                                                <p><label for="renda">Renda bruta:</label>
+							<input type="text" name="renda"/></p>
+						<p><label for="cnpj">CPF</label>
 							<input type="text" name="cnpj"/></p>
-												
+                                                <p><label for="Data de Nascimento">Data de nascimento</label>
+							<input type="text" name="nascimento"/></p>
+                                                <p><label for="FGTS">Você possui três (03) anos de trabalho sob o regime do FGTS?</label>
+                                                    <input type="radio" name="sex" value="Sim" checked> Sim
+                                                    <input type="radio" name="sex" value="Não" checked> Não
+                                                    <br>
+                                                    <br>
 <!--==================================botões===========================================-->
 					<input type="reset" name="limpar_simula" value="Limpar"/>
 					<input type="submit" name="calcular_simula" value="Calcular"/>
@@ -104,6 +115,7 @@
 					</fieldset>
 				</form>
             </div>
+            <div id="pjuridica"> BLABLABLABLABLA </div>                         
             
         </aside>
         <article>

@@ -11,7 +11,7 @@
 }
 
 aside{
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     width: 100%;
     height: auto;
 }
@@ -34,5 +34,6 @@ div{
     display:none;
 }
 
-
-
+#pjuridica{
+    display: none;
+}
