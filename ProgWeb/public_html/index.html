@@ -71,7 +71,38 @@
 			
 			
             <div id="SimulaValores">
-                INSERIR FORMULÁRIOS DE SIMULAR VALORES.
+                <form>
+					<fieldset>
+						<legend>Simulação do valor do seu imóvel</legend>
+						
+						<p><label for="financiamento">Este financiamento é para:</label>
+							<input type="submit" name="PF" value="Pessoa Física">
+							<input type="submit" name="PJ" value="Pessoa Jurídica"></p>
+						<p><label for="tipo">Qual o tipo de financiamento ?</label>
+							<select name="tipo">
+								<option value="" selected>-- Selecione --</option>
+								<option value="residencial">Residencial</option>
+								<option value="comercial">Comercial</option></p></select>
+						<p><label for="categoria">Categoria</label>
+							<select name="categoria">
+								<option value="" selected>-- Selecione --</option>
+								<option value="terreno">Terreno</option>
+								<option value="imoveln">Imóvel Novo</option>
+								<option value="imovelu">Imóvel Usado</option></p></select>
+						<p><label for="cidade">Cidade</label>
+							<input type="text" name="cidade"/></p>
+						<p><label for="valor">Qual o valor aproximado do imóvel ?</label>
+							<input type="text" name="valor"/></p>
+						<p><label for="cnpj">CNPJ</label>
+							<input type="text" name="cnpj"/></p>
+												
+<!--==================================botões===========================================-->
+					<input type="reset" name="limpar_simula" value="Limpar"/>
+					<input type="submit" name="calcular_simula" value="Calcular"/>
+<!--================================fim botões=========================================-->
+						
+					</fieldset>
+				</form>
             </div>
             
         </aside>
