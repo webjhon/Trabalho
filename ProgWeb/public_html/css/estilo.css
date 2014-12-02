@@ -1,20 +1,27 @@
+body{
+	background-color: LightBlue; /*#ADD8E6;*/
+	font-family: arial, helvetica, serif;
+	font-size: 12px;
+}
+
 .botoes{
     background-color: white;
-    border: 2px solid blue;
+    border: 5px ridge blue white;
     font-weight: bold;
     font-size:20px;
     height: 12%;
     width:30%;
 }
-.bothover {
-    background-color:orange;
+
+.bothover{
+    background-color:LightGrey;
 }
 
-aside{
-    /*border: 1px solid black;*/
+/*aside{
+    border: 1px solid black;
     width: 100%;
     height: auto;
-}
+}*/
 
 h2{//simule
    color:blue;
