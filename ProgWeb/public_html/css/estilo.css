@@ -4,6 +4,10 @@ body{
 	font-size: 12px;
 }
 
+h1{
+	text-align: center;
+}
+
 .botoes{
     background-color: white;
     border: 5px ridge blue white;
@@ -24,10 +28,12 @@ body{
 }*/
 
 h2{//simule
-   color:blue;
-   float:left;
-   margin-left:2%;
-   margin-right: 3%;
+	color:blue;
+	float:left;
+	/*margin-left:2%;
+	margin-right: 3%;
+	margin-left: auto;
+	margin-right: auto;*/
 }
 
 div{
