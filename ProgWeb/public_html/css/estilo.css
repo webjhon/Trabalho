@@ -9,8 +9,7 @@ h1{
 }
 
 .botoes{
-    background-color: white;
-    border: 5px ridge blue white;
+    background-color: LightBlack;
     font-weight: bold;
     font-size:20px;
     height: 12%;
@@ -18,7 +17,8 @@ h1{
 }
 
 .bothover{
-    background-color:LightGrey;
+    background-color:LightWhite;
+	
 }
 
 /*aside{
