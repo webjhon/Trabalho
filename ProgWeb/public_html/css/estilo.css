@@ -5,7 +5,7 @@ body{
 }
 
 h1{
-	text-align: center;
+	margin-left:5%;
 }
 
 .botoes{
@@ -13,7 +13,7 @@ h1{
     font-weight: bold;
     font-size:20px;
     height: 12%;
-    width:30%;
+    width:49%;
 }
 
 .bothover{
@@ -21,19 +21,21 @@ h1{
 	
 }
 
-/*aside{
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-}*/
+aside{
+    margin-left:25.5%;
+     margin-right:25.5%;
+}
 
-h2{//simule
-	color:blue;
+h2:nth-child(5){
+	margin-left:3%;
 	float:left;
 	/*margin-left:2%;
 	margin-right: 3%;
 	margin-left: auto;
 	margin-right: auto;*/
+}
+h2:nth-child(6){
+    margin-left:56%;
 }
 
 div{
@@ -42,6 +44,7 @@ div{
 
 #CalculaValores{
     display:none;
+    
 }
 #SimulaValores{
     display:none;
@@ -50,3 +53,39 @@ div{
 #pjuridica{
     display: none;
 }
+#PFisica{
+    display:none;
+}
+#Escolha{
+    display:none;
+}
+#mostraCalcResul{
+    display:none;
+    font-weight: bold;
+    padding-top: 3%;
+    font-size: medium;
+    font-family: arial, helvetica, serif;
+      
+}
+
+#mostraSimulResul{
+    display:none;
+    font-weight: bold;
+    padding-top: 3%;
+    font-size: medium;
+    font-family: arial, helvetica, serif;
+}
+
+#mostraSimulResul_pj{
+    display:none;
+    font-weight: bold;
+    padding-top: 3%;
+    font-size: medium;
+    font-family: arial, helvetica, serif;
+}
+
+.Onfocus{
+    border: 5px solid greenyellow;
+}
+
+

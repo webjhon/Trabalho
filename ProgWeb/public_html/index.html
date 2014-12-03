@@ -23,7 +23,7 @@
 				<h2> Simule o preço da sua nova casa </h2><br>
 			
             <div id="CalculaValores">
-                <form>
+                <form name="form_calc_valores">
 					<fieldset>
 						<legend>Cálculo de valores possíveis de financiamento</legend>
 						
@@ -65,21 +65,31 @@
 
 <!--============================botões============================-->
 					<input type="reset" name="limpar" value="Limpar"/>
-					<input type="submit" name="calcular" value="Calcular"/>
+                                        <input type="button" name="calcular" value="Calcular"/>
+                                        
+                                        <div id="mostraCalcResul">Resultado: </div>
+                                        
+                                        
 <!--============================fim botões============================-->			
 					</fieldset>
 				</form>
             </div>
 			
 			
-            <div id="SimulaValores">
+            <div id="Escolha">
                 <form>
 					<fieldset>
 						<legend>Simulação do valor do seu imóvel</legend>
 						
                                                 <p><label for="financiamento">Este financiamento é para:</label>
-							<input type="submit" name="PF" value="Pessoa Física">
-							<input type="submit" name="PJ" value="Pessoa Jurídica"></p>
+							<input type="button" name="PF" value="Pessoa Física">
+							<input type="button" name="PJ" value="Pessoa Jurídica"></p>
+                                        </fieldset>
+                </form>    
+            </div>
+            <div id="PFisica">
+                <form>
+                    <fieldset>
 						<p><label for="tipo">Qual o tipo de financiamento ?</label>
 							<select name="tipo">
 								<option value="" selected>-- Selecione --</option>
@@ -101,7 +111,7 @@
                                                 <p><label for="renda">Renda bruta:</label>
 							<input type="text" name="renda"/></p>
 						<p><label for="cnpj">CPF</label>
-							<input type="text" name="cnpj"/></p>
+							<input type="text" name="cpf"/></p>
                                                 <p><label for="Data de Nascimento">Data de nascimento</label>
 							<input type="text" name="nascimento"/></p>
                                                 <p><label for="FGTS">Você possui três (03) anos de trabalho sob o regime do FGTS?</label>
@@ -111,13 +121,48 @@
                                                     <br>
 <!--==================================botões===========================================-->
 					<input type="reset" name="limpar_simula" value="Limpar"/>
-					<input type="submit" name="calcular_simula" value="Calcular"/>
+					<input type="button" name="calcular_simula" value="Calcular"/>
+                                        
+                                        <div id="mostraSimulResul"> </div>	
 <!--================================fim botões=========================================-->
 						
-					</fieldset>
-				</form>
+			</fieldset>
+		</form>
             </div>
-            <div id="pjuridica"> BLABLABLABLABLA </div>                         
+            <div id="pjuridica"> 
+                 <form>
+                    <fieldset>
+						<p><label for="tipo">Qual o tipo de financiamento ?</label>
+							<select name="tipo">
+								<option value="" selected>-- Selecione --</option>
+								<option value="residencial">Residencial</option>
+								<option value="comercial">Comercial</option></p></select>
+						<p><label for="categoria">Categoria</label>
+							<select name="categoria">
+								<option value="" selected>-- Selecione --</option>
+								<option value="terreno">Terreno</option>
+								<option value="imoveln">Imóvel Novo</option>
+								<option value="imovelu">Imóvel Usado</option></p></select>
+						<p><label for="cidade">Cidade</label>
+							<input type="text" name="cidade"/></p>
+						<p><label for="valor">Qual o valor aproximado do imóvel ?</label>
+							<input type="text" name="valor_pj"/></p>
+                                                <p><label for="renda">Renda bruta:</label>
+							<input type="text" name="renda"/></p>
+						<p><label for="cnpj">CNPJ</label>
+							<input type="text" name="cnpj"/></p>
+                                                    <br>
+                                                    <br>
+<!--==================================botões===========================================-->
+					<input type="reset" name="limpar_simula" value="Limpar"/>
+					<input type="button" name="calcular_simula_pj" value="Calcular"/>
+                                        
+                                        <div id="mostraSimulResul_pj"> </div>
+<!--================================fim botões=========================================-->
+					
+			</fieldset>
+		</form>
+            </div>                         
             
         </aside>
         <article>
