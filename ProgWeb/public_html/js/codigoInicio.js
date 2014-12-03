@@ -66,9 +66,9 @@ $("input[name=calcular_simula]").click(function(){
    parcela_260 = (restante+(restante*2.0))/260;
    
    document.getElementById("mostraSimulResul").innerHTML = 
-        "Financiamento de 180 meses - Entrada de R$ "+entrada+",00 "+"Parcelas fixas de R$ "+parcela_180+",00"+"<br>"+
-        " Financiamento de 240 meses - Entrada de R$ "+entrada+",00 "+"Parcelas fixas de R$ "+parcela_240+",00"+"<br>"+
-        "Financiamento de 260 meses - Entrada de R$ "+entrada+",00 "+"Parcelas fixas de R$ "+parcela_260+",00";
+        "180 meses - Entrada de R$ "+entrada+",00 "+"Parcelas fixas de R$ "+parcela_180+"<br>"+
+        "240 meses - Entrada de R$ "+entrada+",00 "+"Parcelas fixas de R$ "+parcela_240+"<br>"+
+        "260 meses - Entrada de R$ "+entrada+",00 "+"Parcelas fixas de R$ "+parcela_260;
    $("#mostraSimulResul").show("slow");
    });
 //--------> Simulação de Valores - Pessoa Jurídica <--------    
@@ -89,9 +89,9 @@ $("input[name=calcular_simula_pj]").click(function(){
          parcela_260_pj = (restante_pj+(restante_pj*2.0))/260;
          document.getElementById("mostraSimulResul_pj").innerHTML = 
             "Resultados: "+"<br><br>"+     
-            "Financiamento de 180 meses - Entrada de R$ "+entrada_pj+",00 "+"Parcelas fixas de R$ "+parcela_180_pj+",00"+"<br><br>"+
-            " Financiamento de 240 meses - Entrada de R$ "+entrada_pj+",00 "+"Parcelas fixas de R$ "+parcela_240_pj+",00"+"<br><br>"+
-            "Financiamento de 260 meses - Entrada de R$ "+entrada_pj+",00 "+"Parcelas fixas de R$ "+parcela_260_pj+",00";
+            "180 meses - Entrada de R$ "+entrada_pj+",00 "+"Parcelas fixas de R$ "+parcela_180_pj+",00"+"<br><br>"+
+            "240 meses - Entrada de R$ "+entrada_pj+",00 "+"Parcelas fixas de R$ "+parcela_240_pj+",00"+"<br><br>"+
+            "260 meses - Entrada de R$ "+entrada_pj+",00 "+"Parcelas fixas de R$ "+parcela_260_pj+",00";
         $("#mostraSimulResul_pj").show("slow");
     });
     
