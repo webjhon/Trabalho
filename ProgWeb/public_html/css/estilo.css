@@ -8,6 +8,21 @@ h1{
 	margin-left:5%;
 }
 
+fieldset{
+	background-color: SteelBlue;
+	color: white;
+}
+
+legend{
+	background-color: SteelBlue;
+	color: white;
+	padding: 2px 20px 2px 20px;
+}
+
+p{
+	font-size: 16px;
+}
+
 .botoes{
     background-color: LightBlack;
     font-weight: bold;
@@ -18,7 +33,14 @@ h1{
 
 .bothover{
     background-color:LightWhite;
-	
+}
+
+.limpar{
+	background-color:LightYellow;
+}
+
+.calcular{
+	background-color:LightGreen;
 }
 
 aside{
@@ -88,4 +110,16 @@ div{
     border: 5px solid greenyellow;
 }
 
+.campo{
+	width: 200px;
+}
 
+#select_estado{
+	margin-left: 112px;
+}
+#select_renda1{
+	margin-left: 50px;
+}
+#select_idade{
+	margin-left: 121px;
+}

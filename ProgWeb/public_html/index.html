@@ -27,8 +27,9 @@
 					<fieldset>
 						<legend>Cálculo de valores possíveis de financiamento</legend>
 						
+					<p>	
 						<label for="estado">Qual seu estado ?</label>
-							<select name="estado"><br>
+							<select id="select_estado" class="campo" name="estado"><br>
 								<option value="" selected>--Selecione--</option>
 								<option value="AC">Acre</option>
 								<option value="AL">Alagoas</option>
@@ -57,19 +58,18 @@
 								<option value="SP">São Paulo</option>
 								<option value="SE">Sergipe</option>
 								<option value="TO">Tocantins</option>
-						</select><br>
+						</select><br></p>
 					<p><label for="renda">Qual a sua renda mensal ?</label>
-						<input type="text" name="renda"/></p>
+						<input type="text" id="select_renda1" class="campo" name="renda"/></p>
 					<p><label for="idade">Qual sua idade ?</label>
-						<input type="number" name="idade" min="18" max="100"/></p>
+						<input type="number" id="select_idade" class="campo" name="idade" min="18" max="100"/></p>
 
 <!--============================botões============================-->
-					<input type="reset" name="limpar" value="Limpar"/>
-                                        <input type="button" name="calcular" value="Calcular"/>
-                                        
-                                        <div id="mostraCalcResul">Resultado: </div>
-                                        
-                                        
+					<input type="reset" class="limpar" name="limpar" value="Limpar"/>
+                    <input type="button" class="calcular" name="calcular" value="Calcular"/>
+                    
+					<div id="mostraCalcResul">Resultado: </div>
+					
 <!--============================fim botões============================-->			
 					</fieldset>
 				</form>
@@ -81,9 +81,9 @@
 					<fieldset>
 						<legend>Simulação do valor do seu imóvel</legend>
 						
-                                                <p><label for="financiamento">Este financiamento é para:</label>
-							<input type="button" name="PF" value="Pessoa Física">
-							<input type="button" name="PJ" value="Pessoa Jurídica"></p>
+                        <p><label for="financiamento">Este financiamento é para:</label>
+							<input type="button" class="button" name="PF" value="Pessoa Física">
+							<input type="button" class="button" name="PJ" value="Pessoa Jurídica"></p>
                                         </fieldset>
                 </form>    
             </div>
@@ -91,37 +91,37 @@
                 <form>
                     <fieldset>
 						<p><label for="tipo">Qual o tipo de financiamento ?</label>
-							<select name="tipo">
+							<select name="tipo" class="campo">
 								<option value="" selected>-- Selecione --</option>
 								<option value="residencial">Residencial</option>
 								<option value="comercial">Comercial</option></p></select>
 						<p><label for="categoria">Categoria</label>
-							<select name="categoria">
+							<select name="categoria" class="campo">
 								<option value="" selected>-- Selecione --</option>
 								<option value="terreno">Terreno</option>
 								<option value="imoveln">Imóvel Novo</option>
 								<option value="imovelu">Imóvel Usado</option></p></select>
 						<p><label for="cidade">Cidade</label>
-							<input type="text" name="cidade"/></p>
-                                                <p><label for="Imovel">Possui Imóvel na cidade</label>
-                                                    <input type="radio" name="sex" value="Sim" checked> Sim
-                                                    <input type="radio" name="sex" value="Não" checked> Não
+							<input type="text" name="cidade" class="campo"/></p>
+                        <p><label for="Imovel">Possui Imóvel na cidade</label>
+                            <input type="radio" name="sex" value="Sim" checked> Sim
+                            <input type="radio" name="sex" value="Não" checked> Não
 						<p><label for="valor">Qual o valor aproximado do imóvel ?</label>
-							<input type="text" name="valor"/></p>
-                                                <p><label for="renda">Renda bruta:</label>
-							<input type="text" name="renda"/></p>
+							<input type="text" name="valor" class="campo"/></p>
+                         <p><label for="renda">Renda bruta:</label>
+							<input type="text" name="renda" class="campo"/></p>
 						<p><label for="cnpj">CPF</label>
-							<input type="text" name="cpf"/></p>
-                                                <p><label for="Data de Nascimento">Data de nascimento</label>
-							<input type="text" name="nascimento"/></p>
-                                                <p><label for="FGTS">Você possui três (03) anos de trabalho sob o regime do FGTS?</label>
-                                                    <input type="radio" name="sex" value="Sim" checked> Sim
-                                                    <input type="radio" name="sex" value="Não" checked> Não
-                                                    <br>
-                                                    <br>
+							<input type="text" name="cpf" class="campo"/></p>
+                        <p><label for="Data de Nascimento">Data de nascimento</label>
+							<input type="text" name="nascimento" class="campo"/></p>
+                        <p><label for="FGTS">Possui mais de três (03) anos sob o regime do FGTS?</label>
+                            <input type="radio" name="sex" value="Sim" checked> Sim
+                            <input type="radio" name="sex" value="Não" checked> Não
+                        <br>
+                        <br>
 <!--==================================botões===========================================-->
-					<input type="reset" name="limpar_simula" value="Limpar"/>
-					<input type="button" name="calcular_simula" value="Calcular"/>
+					<input type="reset" class="limpar" name="limpar_simula" value="Limpar"/>
+					<input type="button" class="calcular" name="calcular_simula" value="Calcular"/>
                                         
                                         <div id="mostraSimulResul"> </div>	
 <!--================================fim botões=========================================-->
@@ -133,29 +133,29 @@
                  <form>
                     <fieldset>
 						<p><label for="tipo">Qual o tipo de financiamento ?</label>
-							<select name="tipo">
+							<select name="tipo" class="campo">
 								<option value="" selected>-- Selecione --</option>
 								<option value="residencial">Residencial</option>
 								<option value="comercial">Comercial</option></p></select>
 						<p><label for="categoria">Categoria</label>
-							<select name="categoria">
+							<select name="categoria" class="campo">
 								<option value="" selected>-- Selecione --</option>
 								<option value="terreno">Terreno</option>
 								<option value="imoveln">Imóvel Novo</option>
 								<option value="imovelu">Imóvel Usado</option></p></select>
 						<p><label for="cidade">Cidade</label>
-							<input type="text" name="cidade"/></p>
+							<input type="text" name="cidade" class="campo"/></p>
 						<p><label for="valor">Qual o valor aproximado do imóvel ?</label>
-							<input type="text" name="valor_pj"/></p>
-                                                <p><label for="renda">Renda bruta:</label>
-							<input type="text" name="renda"/></p>
+							<input type="text" name="valor_pj" class="campo"/></p>
+                        <p><label for="renda">Renda bruta:</label>
+							<input type="text" name="renda" class="campo"/></p>
 						<p><label for="cnpj">CNPJ</label>
-							<input type="text" name="cnpj"/></p>
-                                                    <br>
-                                                    <br>
+							<input type="text" name="cnpj" class="campo"/></p>
+                        <br>
+                        <br>
 <!--==================================botões===========================================-->
-					<input type="reset" name="limpar_simula" value="Limpar"/>
-					<input type="button" name="calcular_simula_pj" value="Calcular"/>
+					<input type="reset" class="limpar" name="limpar_simula" value="Limpar"/>
+					<input type="button" class="calcular" name="calcular_simula_pj" value="Calcular"/>
                                         
                                         <div id="mostraSimulResul_pj"> </div>
 <!--================================fim botões=========================================-->
