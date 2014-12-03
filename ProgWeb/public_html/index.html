@@ -90,30 +90,30 @@
             <div id="PFisica">
                 <form>
                     <fieldset>
-						<p><label for="tipo">Qual o tipo de financiamento ?</label>
-							<select name="tipo" class="campo">
+						<p><label for="tipo">Tipo de financiamento</label>
+							<select name="tipo" class="campo" id="simula_tipo">
 								<option value="" selected>-- Selecione --</option>
 								<option value="residencial">Residencial</option>
 								<option value="comercial">Comercial</option></p></select>
 						<p><label for="categoria">Categoria</label>
-							<select name="categoria" class="campo">
+							<select name="categoria" class="campo" id="simula_categoria">
 								<option value="" selected>-- Selecione --</option>
 								<option value="terreno">Terreno</option>
 								<option value="imoveln">Imóvel Novo</option>
 								<option value="imovelu">Imóvel Usado</option></p></select>
 						<p><label for="cidade">Cidade</label>
-							<input type="text" name="cidade" class="campo"/></p>
+							<input type="text" name="cidade" class="campo" id="simula_cidade"/></p>
                         <p><label for="Imovel">Possui Imóvel na cidade</label>
                             <input type="radio" name="sex" value="Sim" checked> Sim
                             <input type="radio" name="sex" value="Não" checked> Não
-						<p><label for="valor">Qual o valor aproximado do imóvel ?</label>
-							<input type="text" name="valor" class="campo"/></p>
+						<p><label for="valor">Valor aproximado do imóvel ?</label>
+							<input type="text" name="valor" class="campo" id="simula_valor"/></p>
                          <p><label for="renda">Renda bruta:</label>
-							<input type="text" name="renda" class="campo"/></p>
-						<p><label for="cnpj">CPF</label>
-							<input type="text" name="cpf" class="campo"/></p>
+							<input type="text" name="renda" class="campo" id="simula_renda"/></p>
+						<p><label for="cpf">CPF</label>
+							<input type="text" name="cpf" class="campo" id="simula_cpf"/></p>
                         <p><label for="Data de Nascimento">Data de nascimento</label>
-							<input type="text" name="nascimento" class="campo"/></p>
+							<input type="text" name="nascimento" class="campo" id="simula_nascimento"/></p>
                         <p><label for="FGTS">Possui mais de três (03) anos sob o regime do FGTS?</label>
                             <input type="radio" name="sex" value="Sim" checked> Sim
                             <input type="radio" name="sex" value="Não" checked> Não
@@ -132,32 +132,32 @@
             <div id="pjuridica"> 
                  <form>
                     <fieldset>
-						<p><label for="tipo">Qual o tipo de financiamento ?</label>
-							<select name="tipo" class="campo">
+						<p><label for="tipo">Tipo de financiamento</label>
+							<select name="tipo" class="campo" id="simula_tipo">
 								<option value="" selected>-- Selecione --</option>
 								<option value="residencial">Residencial</option>
 								<option value="comercial">Comercial</option></p></select>
 						<p><label for="categoria">Categoria</label>
-							<select name="categoria" class="campo">
+							<select name="categoria" class="campo" id="simula_categoria">
 								<option value="" selected>-- Selecione --</option>
 								<option value="terreno">Terreno</option>
 								<option value="imoveln">Imóvel Novo</option>
 								<option value="imovelu">Imóvel Usado</option></p></select>
 						<p><label for="cidade">Cidade</label>
-							<input type="text" name="cidade" class="campo"/></p>
-						<p><label for="valor">Qual o valor aproximado do imóvel ?</label>
-							<input type="text" name="valor_pj" class="campo"/></p>
+							<input type="text" name="cidade" class="campo" id="simula_cidade"/></p>
+						<p><label for="valor">Valor aproximado do imóvel ?</label>
+							<input type="text" name="valor_pj" class="campo" id="simula_valor"/></p>
                         <p><label for="renda">Renda bruta:</label>
-							<input type="text" name="renda" class="campo"/></p>
+							<input type="text" name="renda" class="campo" id="simula_renda"/></p>
 						<p><label for="cnpj">CNPJ</label>
-							<input type="text" name="cnpj" class="campo"/></p>
+							<input type="text" name="cnpj" class="campo" id="simula_cnpj"/></p>
                         <br>
                         <br>
 <!--==================================botões===========================================-->
 					<input type="reset" class="limpar" name="limpar_simula" value="Limpar"/>
 					<input type="button" class="calcular" name="calcular_simula_pj" value="Calcular"/>
                                         
-                                        <div id="mostraSimulResul_pj"> </div>
+                    <div id="mostraSimulResul_pj"> </div>
 <!--================================fim botões=========================================-->
 					
 			</fieldset>
@@ -165,8 +165,8 @@
             </div>                         
             
         </aside>
-        <article>
+	    <article>
             
         </article>
-    </body>
+	</body>
 </html>
